@@ -1,5 +1,4 @@
-![Brazil dart-1(2)](https://user-images.githubusercontent.com/52143624/197362660-fb4b2316-2125-461f-a4a0-1105cac7873d.png)
-
+![image](https://user-images.githubusercontent.com/52143624/197362764-47dc5128-d14f-4575-a643-26aa4f6d9281.png)
 
 Function-oriented library for generating, validating and formatting Brazilian values such as CPF and CNPJ.
 
