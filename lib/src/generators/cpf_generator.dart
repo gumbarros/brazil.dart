@@ -9,34 +9,24 @@ String generateCpf({bool isFormatted = true}) {
 
   cpf.write(beginning);
 
-  final String firstDigit = generateVerificationDigit(cpf.toString());
+  final String firstDigit = generateCpfVerificationDigit(cpf.toString());
 
   cpf.write(firstDigit);
 
-  final String secondDigit = generateVerificationDigit(cpf.toString());
+  final String secondDigit = generateCpfVerificationDigit(cpf.toString());
 
   cpf.write(secondDigit);
 
   return isFormatted ? formatCpf(cpf.toString()) : cpf.toString();
 }
 
-String _generateCpfBeginning() {
-  final random = Random();
-  final cpf = StringBuffer();
-
-  for (var i = 0; i < 9; i++) {
-    cpf.write(random.nextInt(10));
-  }
-
-  return cpf.toString();
-}
-
-String generateVerificationDigit(String cpf) {
+///Generate one of the verification digits of a CPF. The verification digit is generated based on the length of the input.
+String generateCpfVerificationDigit(String input) {
   int result = 0;
-  int multiplier = cpf.length + 1;
+  int multiplier = input.length + 1;
 
-  for (int i = 0; i < cpf.length; i++) {
-    final digit = int.parse(cpf[i]);
+  for (int i = 0; i < input.length; i++) {
+    final digit = int.parse(input[i]);
     result += digit * multiplier;
     multiplier--;
   }
@@ -48,4 +38,15 @@ String generateVerificationDigit(String cpf) {
   }
 
   return (11 - remainder).toString();
+}
+
+String _generateCpfBeginning() {
+  final random = Random();
+  final cpf = StringBuffer();
+
+  for (var i = 0; i < 9; i++) {
+    cpf.write(random.nextInt(10));
+  }
+
+  return cpf.toString();
 }

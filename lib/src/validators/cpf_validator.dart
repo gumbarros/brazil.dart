@@ -16,13 +16,13 @@ bool validateCpf(String input) {
 }
 
 bool _validateFirstDigit(String cpf) {
-  final verificationDigit = generateVerificationDigit(cpf.substring(0, 9));
+  final verificationDigit = generateCpfVerificationDigit(cpf.substring(0, 9));
 
   return verificationDigit == cpf.substring(9, 10);
 }
 
 bool _validateSecondDigit(String cpf) {
-  final verificationDigit = generateVerificationDigit(cpf.substring(0, 10));
+  final verificationDigit = generateCpfVerificationDigit(cpf.substring(0, 10));
 
   return verificationDigit == cpf.substring(10, 11);
 }
