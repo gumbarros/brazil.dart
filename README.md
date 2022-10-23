@@ -22,7 +22,7 @@ dart pub add brazil
 ## Usage
 
 ```dart
-import 'package:brazil/brazil.dart'
+import 'package:brazil/brazil.dart';
 
 //CPF
 final String cpf = generateCpf(isFormatted: false);
