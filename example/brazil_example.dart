@@ -1,5 +1,4 @@
 import "package:brazil/brazil.dart" as brazil;
-import 'package:brazil/src/models/via_cep_data.dart';
 
 void main() async {
   // CPF
@@ -28,7 +27,7 @@ void main() async {
   }
 
   // Lookup CEP data using the ViaCEP webservice
-  final ViaCepData data = await brazil.getCepData("12946-071");
+  final data = await brazil.getCepData("12946-071");
 
   print(data.localidade);
 }

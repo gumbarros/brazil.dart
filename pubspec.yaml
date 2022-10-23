@@ -1,5 +1,5 @@
 name: brazil
-description: Function-oriented library for generating, validating and formatting Brazilian values such as CPF and CNPJ.
+description: Function-oriented library for generating, validating and formatting brazilian values such as CPF and CNPJ.
 
 version: 0.2.0
 homepage: https://www.github.com/gumbarros/brazil.dart
