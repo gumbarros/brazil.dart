@@ -9,17 +9,17 @@ Supported brazilian data for generation, formatting and validation:
 - CPF
 - CNPJ
 
-# Getting Started
+## Getting Started
 
-## Flutter
+### Flutter
 
 ```sh
 flutter pub add brazil
 ```
-## Dart
+### Dart
 ```sh
 dart pub add brazil
 ```
-# Usage
+## Usage
 
 See [brazil_example.dart](https://pub.dev/packages/brazil/example)
