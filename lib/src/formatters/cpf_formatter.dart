@@ -1,4 +1,4 @@
-///Format a brazilian CPF string.
+/// Format a brazilian CPF string.
 String formatCpf(String cpf) {
   final regExp = RegExp(r"^(\d{3})(\d{3})(\d{3})(\d{2})$");
 

@@ -1,7 +1,7 @@
 import "package:brazil/brazil.dart";
 import "package:brazil/src/utils/utils.dart";
 
-///Verify if a brazilian CPF is valid.
+/// Verify if a brazilian CPF is valid.
 bool validateCpf(String input) {
   final String cpf = removeSymbols(input);
 

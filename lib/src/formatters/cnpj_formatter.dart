@@ -1,4 +1,4 @@
-///Format a brazilian CNPJ string.
+/// Format a brazilian CNPJ string.
 String formatCnpj(String cnpj) {
   final RegExp regExp = RegExp(r"^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})");
 

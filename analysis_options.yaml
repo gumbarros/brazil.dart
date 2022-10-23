@@ -3,5 +3,3 @@ include: package:lint/analysis_options.yaml
 linter:
   rules:
       avoid_print: false
-      sort_constructors_first: true
-      prefer_double_quotes: true

@@ -1,7 +1,7 @@
 import "dart:math";
 import "package:brazil/src/formatters/cpf_formatter.dart";
 
-///Generate a valid brazilian CPF.
+/// Generate a valid brazilian CPF.
 String generateCpf({bool isFormatted = true}) {
   final cpf = StringBuffer();
 

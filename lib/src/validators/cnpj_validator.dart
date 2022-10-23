@@ -1,7 +1,7 @@
 import "package:brazil/src/generators/cnpj_generator.dart";
 import "package:brazil/src/utils/utils.dart";
 
-///Verify if a brazilian CNPJ is valid.
+/// Verify if a brazilian CNPJ is valid.
 bool validateCnpj(String input) {
   final String cnpj = removeSymbols(input);
 

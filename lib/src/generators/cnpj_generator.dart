@@ -1,6 +1,7 @@
 import "dart:math";
 import "package:brazil/src/formatters/cnpj_formatter.dart";
 
+/// Generate a valid brazilian CNPJ.
 String generateCnpj({bool isFormatted = true}) {
   final cnpj = StringBuffer();
 
