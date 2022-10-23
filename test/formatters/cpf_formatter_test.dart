@@ -1,4 +1,4 @@
-import 'package:brazil/brazil.dart';
+import "package:brazil/brazil.dart";
 import "package:test/test.dart";
 
 void main() {

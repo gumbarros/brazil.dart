@@ -42,11 +42,11 @@ String generateCpfVerificationDigit(String input) {
 
 String _generateCpfBeginning() {
   final random = Random();
-  final cpf = StringBuffer();
+  final output = StringBuffer();
 
   for (var i = 0; i < 9; i++) {
-    cpf.write(random.nextInt(10));
+    output.write(random.nextInt(10));
   }
 
-  return cpf.toString();
+  return output.toString();
 }
