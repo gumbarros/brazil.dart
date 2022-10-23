@@ -8,7 +8,7 @@ Function-oriented library for generating, validating, and formatting values such
 - Constants with useful values like a `Map` of all brazilian states
 - CEP lookup using the ViaCEP webservice
   
-# Getting Started
+## Getting Started
 
 ### Flutter
 
