@@ -20,6 +20,6 @@ flutter pub add brazil
 ```sh
 dart pub add brazil
 ```
-## Usage
+# Usage
 
 See [brazil_example.dart](https://pub.dev/packages/brazil/example)
