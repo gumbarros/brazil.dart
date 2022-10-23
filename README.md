@@ -10,12 +10,12 @@ Function-oriented library for generating, validating, and formatting values such
   
 # Getting Started
 
-## Flutter
+### Flutter
 
 ```sh
 flutter pub add brazil
 ```
-## Dart
+### Dart
 ```sh
 dart pub add brazil
 ```
