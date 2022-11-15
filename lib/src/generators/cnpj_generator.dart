@@ -1,5 +1,6 @@
 import "dart:math";
 import "package:brazil/src/formatters/cnpj_formatter.dart";
+import 'package:meta/meta.dart';
 
 /// Generate a valid brazilian CNPJ.
 String generateCnpj({bool isFormatted = true}) {
@@ -23,6 +24,7 @@ String generateCnpj({bool isFormatted = true}) {
 }
 
 ///Generate one of the verification digits of a CNPJ. The verification digit is generated based on the length of the input.
+@protected
 String generateCnpjVerificationDigit(String input) {
   int result = 0;
 

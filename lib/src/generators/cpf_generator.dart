@@ -1,5 +1,6 @@
 import "dart:math";
 import "package:brazil/src/formatters/cpf_formatter.dart";
+import 'package:meta/meta.dart';
 
 /// Generate a valid brazilian CPF.
 String generateCpf({bool isFormatted = true}) {
@@ -21,6 +22,7 @@ String generateCpf({bool isFormatted = true}) {
 }
 
 ///Generate one of the verification digits of a CPF. The verification digit is generated based on the length of the input.
+@protected
 String generateCpfVerificationDigit(String input) {
   int result = 0;
   int multiplier = input.length + 1;

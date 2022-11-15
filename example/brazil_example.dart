@@ -26,8 +26,12 @@ void main() async {
     print("${state.key} - ${state.value}");
   }
 
+  final String formattedCep = brazil.formatCep("12946071");
+
+  print(formattedCep);
+
   // Lookup CEP data using the ViaCEP webservice
-  final data = await brazil.getCepData("12946-071");
+  final data = await brazil.getCepData(formattedCep);
 
   print(data.localidade);
 }

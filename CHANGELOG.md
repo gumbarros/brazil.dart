@@ -1,3 +1,8 @@
+## 1.0.0
+
+- Added CEP formatter
+- `generateCpfVerificationDigit` and `generateCnpjVerificationDigit` are now protected methods
+
 ## 0.2.0
 
 - Added constant with all UFs

@@ -2,6 +2,7 @@
 library brazil;
 
 export "package:brazil/src/constants/states.dart";
+export "package:brazil/src/formatters/cep_formatter.dart";
 export "package:brazil/src/formatters/cnpj_formatter.dart";
 export "package:brazil/src/formatters/cpf_formatter.dart";
 export "package:brazil/src/generators/cnpj_generator.dart";
